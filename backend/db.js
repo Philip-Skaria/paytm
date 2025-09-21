@@ -32,11 +32,11 @@ const userSchema = new mongoose.Schema({
         maxLength: 50
     }
 });
-// schema for account balance
+
 const accountSchema = new mongoose.Schema({
     userId: {
-        type: mongoose.Schema.Types.ObjectId, 
-        ref: 'User',// Reference to User model
+        type: mongoose.Schema.Types.ObjectId, // Reference to User model
+        ref: 'User',
         required: true
     },
     balance: {
@@ -50,5 +50,5 @@ const User = mongoose.model('User', userSchema);
 
 module.exports = {
 	User,
-  Account,
+    Account
 };
