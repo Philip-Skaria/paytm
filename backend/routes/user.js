@@ -1,5 +1,6 @@
 // backend/routes/user.js
 const express = require('express');
+
 const router = express.Router();
 const zod = require("zod");
 const { User, Account } = require("../db");
@@ -137,4 +138,4 @@ router.get("/bulk", async (req, res) => {
     })
 })
 
-module.exports = router;
+module.exports = router;   
